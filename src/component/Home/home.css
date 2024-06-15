@@ -1,0 +1,43 @@
+.slider>div>.wrapper {
+    width: calc(100% - (300px + 2em));
+    margin-left: auto;
+ }
+ 
+ .slider .item {
+    position: relative;
+    height: 474px;
+ }
+ 
+ .slider .text-content {
+    position: relative;
+    height: var(--percent100);
+    justify-content: flex-end;
+    padding: 0 0 5% 8%;
+    z-index: 1;
+ }
+ 
+ .slider h3 {
+    font-size: var(--font-small);
+    font-weight: var(--fw7);
+    width: fit-content;
+    padding: 4px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 4px
+ }
+ 
+ .text-content :where(h2, h4) span:first-child {
+    font-weight: var(--fw3);
+    columns: var(--light-text-color);
+ }
+ 
+ .text-content :where(h2, h3) span:last-child {
+    color: var(--dark-color);
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+ }
+ 
+ .swiper-pagination-bullet-active {
+    background-color: var(--secondary-dark-color);
+ }
